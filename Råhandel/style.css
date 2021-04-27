@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+
+/*Header*/
+
+
+.wrapper-header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: rgb(239, 233, 219);
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+    display: inline;
+    top: 0;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 100px;
+}
+
+.logo img {
+    width: 10rem;
+    padding: 2.3rem 1rem 0.4rem;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: black;
+    letter-spacing: 5px;
+    padding: 2.2rem 1.5rem;
+}
+
+.opret {
+    border-right: solid;
+}
+
+nav ul {
+    float: right;
+    line-height: 50px;
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #262626;
+    padding: 2rem 1.5rem;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 20%;
+    margin-top: 75px;
+    line-height: 75px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #262626;
+}
+
+.dropdown a:hover {
+    background-color: gray;
+}
+
+#dropdown {
+    display: none;
+}
+
+#dropdown.active {
+    display: block;
+}
+
+.drop-buttonA {
+    padding: 10px 104px;
+    margin-left: -1.5rem;
+}
+
+.drop-buttonA, .drop-buttonB {
+    border-bottom: solid;
+}
+
+.drop-buttonB, .drop-buttonC {
+    padding: 10px 80px;
+    margin-left: -1.5rem;
+}
+
+/*
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.opret {
+    border-right: solid;
+}
+
+nav {
+    line-height: 100px;
+    /*float: right;
+    margin-left: 10rem;*//*
+}
+
+nav a {
+    text-decoration: none;
+    letter-spacing: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0 10px;
+    color: #262626;
+    padding: 2.2rem 1.5rem;
+}
+*/
+
+/*Body*/
+
+
+body {
+    background-color: rgb(239, 233, 219);
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    overflow-y: scroll;
+}
+
+.topContainer {
+    background-image: url(./billeder/råhandeltoppic.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    display: block;
+    position: fixed;
+    top: 5rem;
+    height: 50vh;
+}
+
+
+.logoContainer {
+    position: fixed;
+    margin-left: 45%;
+    top: 15%;
+}
+
+.logoContainer img {
+    width: 175px;
+}
+
+.topContainer h2 {
+    padding-top: 10%;
+    width: 100%;
+    font-size: 30px;
+    color: #fff;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.wrapper {
+    margin-left: 25%;
+    width: 50vw;
+    text-align: center;
+}
+
+.content-area {
+    width: 100%;
+    position: relative;
+    top: 650px;
+    background: rgb(239, 233, 219);
+    height: 1500px;
+    padding-top: 30px;
+}
+
+.content-area::before {
+    content: "";
+    position: absolute;
+    inset: -150px 0px 0px;
+    background-image: url(./billeder/bcklogo.png);
+    background-position: center top;
+    opacity: 0.06;
+    background-size: 40%;
+    background-repeat: repeat;
+}
+
+
+.content-area h3 {
+    text-transform: uppercase;
+    font-size: 25px;
+    letter-spacing: 3px;
+}
+
+.content-area p {
+    font-size: 20px;
+    line-height: 2;
+    padding-top: 25px;
+}
+
+.container {
+    background-color: rgb(249, 249, 249);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.button {
+    background: rgb(22, 99, 159);
+    padding: 10px 15px;
+    color: rgb(249, 249, 249);
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    margin-top: 25px;
+    text-decoration: none;
+    transition: 0.4s;
+    text-align: center;
+}
+
+.button:hover {
+    background: rgb(10, 43, 68);
+    color: rgb(249, 249, 249);
+}
+
+.popup {
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 150%;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center; 
+    margin-top: -65rem
+}
+
+.popup-content {
+    height: 250px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: fixed;
+    margin-bottom: 75%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    box-shadow: 6px 6px 29px -4px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
